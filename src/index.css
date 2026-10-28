@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* ======================================================================
+   CxP360 – Estilos globales
+   Tailwind CSS v4: las clases se escriben directamente en los componentes.
+   ====================================================================== */
+
+@theme {
+  --font-sans: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  @apply bg-slate-100 text-slate-800;
+}
+
+/* Números alineados en tablas de montos */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Impresión de reportes (RF-29) ---------- */
+@media print {
+  @page {
+    size: letter;
+    margin: 14mm;
+  }
+
+  body {
+    background: #ffffff;
+    font-size: 11px;
+  }
+
+  table {
+    page-break-inside: auto;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+}
