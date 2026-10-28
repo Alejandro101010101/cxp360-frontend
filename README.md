@@ -3,6 +3,8 @@
 Interfaz web del **Sistema de Cuentas por Pagar de Ferretería Los Esclavos** (Cuilapa, Santa Rosa).
 Proyecto final del curso Desarrollo Web – Universidad Mariano Gálvez de Guatemala, 2026.
 
+BACKEND: https://github.com/Alejandro101010101/cxp360-backend/tree/main
+
 ## Tecnologías
 
 | Herramienta | Uso |
